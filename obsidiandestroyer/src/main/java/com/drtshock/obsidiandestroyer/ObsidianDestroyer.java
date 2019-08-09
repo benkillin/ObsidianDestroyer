@@ -144,7 +144,7 @@ public class ObsidianDestroyer extends JavaPlugin {
 
         pm.registerEvents(new EntityExplodeListener(), this);
         if (HookManager.getInstance().isHookedCannons()) {
-            pm.registerEvents(new EntityImpactListener(), this);
+            //pm.registerEvents(new EntityImpactListener(), this);
         }
         pm.registerEvents(new PlayerListener(), this);
         pm.registerEvents(new BlockListener(), this);

@@ -1,7 +1,7 @@
 package com.drtshock.obsidiandestroyer.managers;
 
-import at.pavlov.cannons.event.ProjectileImpactEvent;
-import at.pavlov.cannons.event.ProjectilePiercingEvent;
+//import at.pavlov.cannons.event.ProjectileImpactEvent;
+//import at.pavlov.cannons.event.ProjectilePiercingEvent;
 import com.drtshock.obsidiandestroyer.ObsidianDestroyer;
 import com.drtshock.obsidiandestroyer.datatypes.EntityData;
 import com.drtshock.obsidiandestroyer.enumerations.DamageResult;
@@ -807,7 +807,7 @@ public class ChunkManager {
      *
      * @param event the ProjectilePiercingEvent to handle
      */
-    public void handleCannonPiercing(ProjectilePiercingEvent event) {
+    /*public void handleCannonPiercing(ProjectilePiercingEvent event) {
         if(!blockExplodeEvent) {
             ObsidianDestroyer.debug("ProjectilePiercingEvent not running because org.bukkit.event.block.BlockExplodeEvent not found.");
             return;
@@ -886,14 +886,14 @@ public class ChunkManager {
         for (Block block : blocksIgnored) {
             explosionEvent.blockList().remove(block);
         }
-    }
+    }*/
 
     /**
      * Handles the cannons projectile event
      *
      * @param event the ProjectileImpactEvent to handle
      */
-    public void handleCannonImpact(ProjectileImpactEvent event) {
+    /*public void handleCannonImpact(ProjectileImpactEvent event) {
         ObsidianDestroyer.debug("ProjectileImpactEvent: " + event.getProjectile().getItemName());
 
         if (event.isCancelled()) {
@@ -933,7 +933,7 @@ public class ChunkManager {
                 }
             }
         }
-    }
+    }*/
 
     /**
      * Handles a block on an ProjectilePiercingEvent

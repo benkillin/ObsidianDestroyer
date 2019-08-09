@@ -1,14 +1,14 @@
 package com.drtshock.obsidiandestroyer.listeners;
 
-import at.pavlov.cannons.event.ProjectileImpactEvent;
-import at.pavlov.cannons.event.ProjectilePiercingEvent;
+//import at.pavlov.cannons.event.ProjectileImpactEvent;
+//import at.pavlov.cannons.event.ProjectilePiercingEvent;
 import com.drtshock.obsidiandestroyer.managers.ChunkManager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 public class EntityImpactListener implements Listener {
 
-    @EventHandler(ignoreCancelled = true)
+    /*@EventHandler(ignoreCancelled = true)
     public void onProjectilePiercing(ProjectilePiercingEvent event) {
         if (event == null || ChunkManager.getInstance().getDisabledWorlds().contains(event.getImpactLocation().getWorld().getName())) {
             return; // do not do anything in case explosions get cancelled
@@ -24,5 +24,5 @@ public class EntityImpactListener implements Listener {
         }
 
         ChunkManager.getInstance().handleCannonImpact(event);
-    }
+    }*/
 }
